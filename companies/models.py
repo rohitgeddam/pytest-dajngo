@@ -15,7 +15,7 @@ class Company(models.Model):
     status = models.CharField(
         max_length=25, choices=CompanyStatus.choices, default=CompanyStatus.HIRING
     )
-    latest_updated = models.DateTimeField(default=now, editable=True)
+    last_updated = models.DateTimeField(default=now, editable=True)
     application_link = models.URLField(blank=True)
     notes = models.CharField(max_length=100, blank=True)
 
