@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 pytest = "*"
 django = "*"
+django-rest-framework = "*"
+black = "*"
 
 [dev-packages]
 
